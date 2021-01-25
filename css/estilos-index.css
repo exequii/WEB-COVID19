@@ -84,13 +84,13 @@
     text-align: center;
     border-radius: 20px;
     font-family: 'Overpass', sans-serif;
-    transform: scale(1);
-    transition: transform 1s;
+    /*transform: scale(1);
+    transition: transform 1s;*/
 }
 
 .imgboton a:hover{
     background-color:rgb(78, 74, 74);
-    transform: scale(1.2);
+    /*transform: scale(1.2);*/
 }
 
 

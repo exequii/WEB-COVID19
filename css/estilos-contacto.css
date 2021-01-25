@@ -73,14 +73,14 @@ section{
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
     color: white;
-    transform: scale(1);
-    transition: transform 1s;
+    /*transform: scale(1);
+    transition: transform 1s;*/
     margin-left: 10px;
 }
 
 .formulario i:hover{
     color: black;
-    transform: scale(1.2);
+    /*transform: scale(1.2);*/
 
 }
 
@@ -96,13 +96,13 @@ section{
     height: 30px;
     border: 2px solid rgb(158, 158, 158);
     border-radius: 10px;
-    transform: scale(1);
-    transition: transform 1s;
+    /*transform: scale(1);
+    transition: transform 1s;*/
     color: white;
 }
 
 #botoncito:hover{
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
     color: black;
 }
 

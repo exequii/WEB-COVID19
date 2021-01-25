@@ -71,13 +71,15 @@ p{
     background-color: rgb(68, 135, 189);
     border: 2px solid rgb(158, 158, 158);
     border-radius: 20px;
-    transform: scale(1);
+    /*transform: scale(1);
     transition: transform 1s;
+    */
 }
 
-.lista button:hover{
+/*.lista button:hover{
     transform: scale(1.1);
 }
+*/
 
 .lista button a{
     text-decoration: none;

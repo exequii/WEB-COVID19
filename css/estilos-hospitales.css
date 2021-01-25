@@ -81,15 +81,15 @@ iframe{
     width: 80%;
 }
 
-#listado a{
+/*#listado a{
     transform: scale(1);
     transition: transform 1s;
 }
-
+*/
 #listado a:hover{
     color: rgb(43, 172, 211);
     cursor: pointer;
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
 
 }
 
