@@ -1,0 +1,156 @@
+/* ---------------------------------------------- PLACEHOLDER --------------------------------------------------*/
+
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    
+}
+
+/************************************************ TEXTOS ******************************************************/
+
+h2{
+    margin: 20px 0px;
+    color: rgb(43, 172, 211);
+    
+}
+
+#ubi{
+    margin: 20px;
+    text-align: center;
+}
+
+.error{
+    color: red;
+}
+
+/************************************************* MAPA INTERACTIVO ****************************************/
+
+iframe{
+    border: 2px solid black;
+}
+
+/*************************************************** FOOTER **********************************************/
+
+footer{
+    margin-top: 20px;
+}
+
+
+/* ----------------------------------------------- FORMULARIO -------------------------------------------*/
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:grey;
+}
+
+
+.formulario{
+    border-bottom: 5px solid black;
+}
+
+.formulario article{
+    margin-bottom: 30px;
+}
+
+.formulario article a{
+    text-decoration: none;
+    color:grey;
+}
+
+.formulario article a:hover{
+    color: black;
+}
+
+.formulario i{
+    padding: 10px;
+    background-color: rgb(54, 100, 138);
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 20px;
+    color: white;
+    transform: scale(1);
+    transition: transform 1s;
+    margin-left: 10px;
+}
+
+.formulario i:hover{
+    color: black;
+    transform: scale(1.2);
+
+}
+
+.formulario input{
+    height: 30px;
+    /*width: 300px;*/
+    width: 100%;
+}
+
+#botoncito{
+    background-color:rgb(54, 100, 138);
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 1s;
+    color: white;
+}
+
+#botoncito:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+/*
+.formulario button a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.formulario button a:hover{
+    color: black;
+}
+*/
+
+textarea{
+    width: 100%;
+}
+
+#mensaje{
+    color: crimson;
+}
+
+
+@media screen and (max-width: 47em){
+
+    .formulario{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .formulario article{
+        text-align: center;
+    }
+
+    li{
+        font-size: 80% !important;
+    }
+    
+    .formulario input{
+        width: 70%;
+        height: 70%;
+    }
+
+    .formulario textarea{
+        width: 70%;
+        height: 70%;
+    }
+
+}

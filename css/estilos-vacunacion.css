@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    color: rgb(43, 172, 211);
+    padding-top: 10px;
+}
+
+.contenedor{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    padding: 2%;
+    /*background-color: rgb(210, 250, 255);*/
+    background-color: rgb(158, 158, 158);
+    border-radius: 20px;
+    margin: 2%;
+}
+
+.item img{
+    border-radius: 20px;
+}
+
+#contenedorCalendario{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#calendario{
+    width: 90%;
+}
+
+@media screen and (max-width: 47em){
+
+    .contenedor{
+        flex-direction: column;
+
+    }
+
+    .contenedor img{
+        width: 100%;
+    }
+}

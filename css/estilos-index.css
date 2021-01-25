@@ -1,0 +1,245 @@
+/* ------------------------------------------------ IMAGEN CENTRAL ---------------------------------------------- */
+
+.imagen{
+    display: flex;
+    text-align: center;
+    background-color: rgb(190, 189, 189);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.central{
+    border: 5px solid rgb(187, 180, 180);
+    border-radius: 20px;
+    margin: 10px;
+    width: 45%;
+}
+
+.flechas{
+    /*width: 100px;
+    height: 100px;
+    height: 20%;*/
+    width: 8%;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.flechas:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* -------------------------------------------- TITULO DE LA PAGINA ---------------------------------------------*/
+
+.titulo{
+    text-align: center;
+    margin: 30px;
+    display: block;
+    background-color: grey;
+    border: 1px solid black;
+    color: #303030;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+/* ----------------------------- IMAGENES CIRCULARES HOSPITAL ENFERMEDADES Y VACUNAS --------------------------- */
+
+.imagenes-circulares{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    
+}
+
+.imgcir{
+    /*width: 200px;
+    height: 150px;*/
+    border-radius: 50%;
+    width: 100%;
+    height: 70%;  
+} 
+
+/* ------------------------------------ BOTONES HOSPITAL ENFERMEDADES Y VACUNAS ---------------------------- */
+
+.imgboton{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    
+    justify-content: space-around;
+    width: 250px;
+}
+
+.imgboton a{
+    background-color: grey;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 0px 5px 0px;
+    width: 100%;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.imgboton a:hover{
+    background-color:rgb(78, 74, 74);
+    transform: scale(1.2);
+}
+
+
+/* --------------------------------------- BARRA LLAMAR AL 148 ------------------------------------------- */
+
+.llamar{
+    color: white;
+    background-image: url(../img/147.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    height: 230px;
+    /*background-color: grey;*/
+}
+
+.llamar article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#primeramitad{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 1.56em;
+}
+
+#segundamitad{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#telefono img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.llamaal {
+    font-size: 4em;
+}
+
+#telefono{
+    width: 20%;
+}
+
+#num{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-size: 12em;
+    /*max-width: 0px;
+    padding-right: 210px;*/
+ }
+
+ #num p{
+     height: 100%;
+     
+ }
+ 
+
+ /***************************************** MEDIA QUERIES *************************************************/
+ @media screen and (max-width: 1000px){
+
+    h1{
+        font-size: 90%;
+    }
+
+    #primeramitad{
+        font-size:80%;
+    }
+
+    #num{
+        height: auto;
+    }
+    #num p{
+        font-size: 70%;
+        align-items: center;
+        
+    }
+ }
+
+ 
+ 
+ @media screen and (max-width: 47em){
+
+    h1{
+        font-size: 70%;
+    }
+
+    .imagenes-circulares{
+        flex-direction: flex;
+        flex-wrap: wrap;
+        height: 80%;
+    }
+
+    .imgboton{
+        margin: 3%;
+        width: auto;
+    }
+    .imgboton img{
+        margin: 10%;
+        width: 80%;
+    }
+
+    #primeramitad{
+        font-size:70%;
+    }
+
+    #num{
+        height: auto;
+    }
+    #num p{
+        font-size: 50%;
+        align-items: center;
+        
+    }
+
+ }
+
+ @media screen and (max-width: 500px){
+
+    #primeramitad{
+        font-size:50%;
+    }
+
+    #num{
+        height: auto;
+    }
+    #num p{
+        font-size: 30%;
+        align-items: center;
+        
+    }
+
+    .llamar{
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+
+    }
+
+ }

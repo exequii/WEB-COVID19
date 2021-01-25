@@ -1,0 +1,384 @@
+/*************************************************** TEXTOS **************************************************/
+
+h1{
+    text-align: center;
+    padding: 10px;
+    color: rgb(43, 172, 211);
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    color: rgb(43, 172, 211);
+
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+#texto{
+    margin-bottom: 50px;
+}
+
+#mensaje{
+    color: crimson;
+}
+.sexop{
+    color: black;
+}
+
+/***************************************************** MAIN *************************************************/
+
+/************* FOTO COVID - INFORMACION DE COVID - SECTION GENERAL 1 *************/
+.seccion-uno{
+   width: 80%;
+   margin: auto;
+   padding: 10px;
+}
+
+.seccion-uno article{
+    width:auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.seccion-uno article img{
+    /*width: 510px;*/
+    width: 90%;
+    /*height: 290px;*/
+    padding: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(158, 158, 158);
+}
+
+.seccion-uno div{
+    width:  50%;
+    text-align: justify;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#sintomas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+
+/************* SECTION GENERAL 2 - SINTOMAS DE COVID - FORMULARIO ****************/
+
+/******* FORMULARIO *********/
+.seccion-dos{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-dos img{
+    width: 220px;
+    height: 120px;
+        
+}
+
+.articulo-uno{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.articulo-uno div{
+    padding: 10px;
+}
+
+/******** FORMULARIO *************/
+
+.articulo-dos{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#form-covid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.grid-completa {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#form-covid label {
+    display: block;
+    margin: 2px 0;
+}
+
+#form-covid input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.sexo {
+    display: flex;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.sexo input[type="radio"] {
+   width: auto;
+}
+
+.paises {
+    display: flex;
+}
+
+.paises select {
+    margin-left: 10px;
+    width: 65%;
+}
+
+.indica-sintomas {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.pregunta-dos {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 70% 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.pregunta{
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 50% 25px 10px 25px 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* PASO A COMENTARIO PORQUE EL BOTON DEJO DE SER UN MAILTO.
+.boton button{
+    width: 120px;
+    height: 30px;
+    background-color:rgb(68, 135, 189);
+    color: white;
+    border-radius: 10px;
+}
+
+.boton button a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.boton button a:hover{
+    color: black;
+}
+*/
+
+#botoncito{
+    
+    height: 30px;
+    background-color:rgb(68, 135, 189);
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+#botoncito:hover{
+    color: black;
+    transform: scale(1.1);
+
+}
+
+.seccion-tres{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+.seccion-tres img{
+    /*width: 220px;
+    height: 140px;*/
+    width: 100%; 
+}
+
+.fila1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fila1 img{
+    width: 15%;
+}
+
+.fila2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fila2 img{
+    width: 15%;
+}
+
+.seccion-cuatro{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*.seccion-cuatro img{
+    width: 220px;
+    height: 140px;
+    
+}
+*/
+
+.info{
+    width: 30%;
+}
+
+
+
+/********************************************* HOSPITAL DE MORON Y FOTO ************************************/
+.titulo{
+    text-align: start;
+    padding: 0px;
+}
+
+#foto-hospital{
+    border-radius: 10px;
+    width: 80%;
+}
+
+/************************************************** MAPA INTERACTIVO ****************************************/
+.mapita{
+    width: 70%;
+}
+
+iframe{
+    border: 2px solid black;
+    width: 100%;
+}
+
+/************************************************* PLACEHOLDER **********************************************/
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 47em){
+
+    .seccion-uno article{
+        flex-direction: column;
+        
+    }
+
+    .seccion-uno div {
+        width: 100%;
+    }
+
+
+    .seccion-dos{
+        flex-direction: column;
+    }
+    
+    .seccion-dos article{
+        width: 100%;
+    }
+
+    .seccion-cuatro{
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .mapita{
+        width: 100%;
+    }
+
+    .seccion-tres{
+        flex-direction: row;
+        
+    }
+
+    .fila1{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .fila1 img{
+        width: 100px;
+    }
+
+    .fila2 img{
+        width: 100px;
+    }
+
+    .fila2{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #form-covid{
+        display: block;
+    }
+
+    .boton{
+        width: 50%;
+        margin-top: 10px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 30em){
+
+    p{
+        font-size: 0.6em;
+    }
+
+
+}
