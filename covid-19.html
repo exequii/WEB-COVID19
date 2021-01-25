@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>COVID-19</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos-comunes.css">
+    <link rel="stylesheet" href="css/estilos-covid-19.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Secular+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto&display=swap');
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+
+        <div id="buscador">
+            <form>
+                <input type="text" placeholder="Buscar.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="menu"> <!-- Menu horizontal -->
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="enfermedades.html">ENFERMEDADES</a></li>
+            <li><a href="vacunacion.html">VACUNACION</a></li>
+            <li><a href="hospitales.html">HOSPITALES</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <a class="desplegable"></a>
+    
+    <main>
+            <h1>COVID-19</h1>  
+        
+            <section class="seccion-uno">
+                <article>
+                    <div>
+                        <img src="img/covid-19.jpg" alt="covid 19">
+                    </div>
+
+                    <div>
+                        <p>Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto
+                             en animales como en humanos. En los humanos, se sabe que varios
+                              coronavirus causan infecciones respiratorias que pueden ir desde
+                               el resfriado común hasta enfermedades más graves como el síndrome 
+                               respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo
+                                severo (SRAS). El coronavirus que se ha descubierto más recientemente
+                                 causa la enfermedad por coronavirus COVID-19.Los síntomas más habituales
+                                  de la COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas
+                                   menos frecuentes que afectan a algunos pacientes son los dolores y molestias,
+                                    la congestión nasal, el dolor de cabeza, la conjuntivitis, el dolor de garganta,
+                                     la diarrea, la pérdida del gusto o el olfato y las erupciones cutáneas o cambios
+                                      de color en los dedos de las manos o los pies. Estos síntomas suelen ser leves y
+                                       comienzan gradualmente. Algunas de las personas infectadas solo presentan síntomas levísimos.</p>
+                    </div>
+                </article>
+            </section>
+        
+            <h2>Formulario de detección (Test) de Coronavirus (COVID19)</h2>
+                      
+        <section class="seccion-dos">
+            
+            
+            <article class="articulo-uno">
+                <div>
+                    <p id="texto">Hola usuario! Si tienes síntomas de COVID-19 o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas. <br>
+                    Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. <br>
+                    El uso de este servicio supone la aceptacion de los terminos y la política de privacidad descritos en <a href="condiciones.html">Ver las condiciones y políticas</a>.</p>
+                </div>
+            
+                <h2 class="titulo">Síntomas</h2>
+            
+                <div id="sintomas">
+                    <img src="img/23-fiebre-tos.png" alt="fiebre y tos">
+                    <img src="img/24-fiebre-dolor-garganta.png" alt="fiebre y dolor de garganta">
+                    <img src="img/25-fiebre-dificultad-respirar.png" alt="dificultad al respirar">   
+                </div>
+            </article>
+            
+            <article class="articulo-dos">
+
+                <div>
+                    <form action="mailto:programacion@hotmail.com" name="form" method="post" enctype="text/plain"
+                     name="form2" id="form-covid" onsubmit="return validar('fiebre','dolor','tos','garganta','respirar')">
+
+                        <div class="grid-completa">
+                            <label for="nombre-apellido">Nombre y apellido</label>
+                            <input type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Ingrese nombre y apellido separados por un espacio">
+                        </div>
+
+                        <div>
+                            <label for="dni">DNI</label>
+                            <input type="text" id="dni" name="dni" placeholder="DNI">
+                        </div>
+
+                        <div>
+                            <label for="tel">Teléfono</label>
+                            <input type="tel" id="tel" name="tel" placeholder="Ingrese su numero">
+                        </div>
+
+                        <div>
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese ciudad">
+                        </div>
+
+                        <div>
+                            <label for="sexo">Sexo</label>
+                                <div class="sexo" id="sexocolor">
+                                    <input name="sexo" type="radio" value="M">Masculino
+                                    <input name="sexo" type="radio" value="F">Femenino
+                                </div>
+                        </div>
+
+                        <div class="pregunta-dos grid-completa" id="viajepais">
+                            <label for="viaje">¿Has viajado al exterior de la República Argentina? </label>
+                            <input name="viaje" type="radio" value="si" id="travel" onchange="mostrar1('viaje', 'divpaises')"> Si
+                            <input name="viaje" type="radio" value="no" onchange="mostrar1('viaje', 'divpaises')"> No
+                        </div>
+
+                        <div class="grid-completa paises" id="divpaises">
+                            <label for="paises">Paises visitados</label>
+
+                            <select name="paises" id="paises">
+                                <option name="paises" value="">--Seleccione--</option>
+                                <option name="paises" value="0">Brasil</option>
+                                <option name="paises" value="0">Italia</option>
+                                <option name="paises" value="0">China</option>
+                                <option name="paises" value="0">Estados Unidos</option>
+                            </select>
+                        </div>
+
+
+                        <p class="indica-sintomas">Por favor, indica los síntomas que presentas:</p>
+
+                        <div class="preguntas grid-completa">
+                            <div class="pregunta" id="fiebre">
+                                <label name="fiebre" > ¿Tuviste Fiebre mayor a 38 grados?</label>
+                                <input name="fiebre" type="radio" value="si"> Si
+                                <input name="fiebre" type="radio" value="no" > No
+                            </div>
+
+                            <div class="pregunta" id="dolor">
+                                <label name="dolor">¿Tuviste Dolor de cabeza?</label>
+                                <input name="dolor" type="radio" value="si" > Si
+                                <input name="dolor" type="radio" value="no" > No
+                            </div>
+
+                            <div class="pregunta" id="tos">
+                                <label name="tos">¿Tuviste una tos persistente? </label>
+                                <input name="tos" type="radio" value="si"> Si
+                                <input name="tos" type="radio" value="no" > No
+                            </div>
+
+                            <div class="pregunta" id="garganta">
+                                <label name="garganta">¿Tuviste dolor de garganta? </label>
+                                <input name="garganta" type="radio" value="si"> Si
+                                <input name="garganta" type="radio" value="no" > No
+                            </div>
+
+                            <div class="pregunta" id="respirar">
+                                <label name="respirar">¿Tuviste dificultad para respirar? </label>
+                                <input name="respirar" type="radio" value="si" id="difrespirar" onchange="mostrar('respirar', 'direccion1', 'ciudad-actual1')"> Si
+                                <input name="respirar" type="radio" value="no" id="difrespno" onchange="mostrar('respirar', 'direccion1', 'ciudad-actual1')"> No
+                            </div>
+                        </div>
+
+
+                        <div id="direccion1">
+                            <label for="direccion">Direccion Actual</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Ingrese direccion donde se hospeda">
+                        </div>
+
+                        <div id="ciudad-actual1">
+                            <label for="ciudad-actual">Ciudad Actual</label>
+                            <input type="text" id="ciudad-actual" name="ciudad-actual" placeholder="Ingrese ciudad donde se encuentra">
+                        </div>
+                    
+            
+                        <div class="boton">
+                            <input type="submit" value="Enviar" id="botoncito">
+                            <!--<button><a href="mailto:programacion_web@gmail.com">ENVIAR</a></button>-->
+                        </div>
+                        <br>
+
+                        <!--<div id="mensaje" class="error">
+
+                        </div>
+                    -->
+
+                    </form>
+                    <br>
+                    <div id="mensaje" class="error">
+
+                    </div>
+                </div>                  
+            </article>
+        </section> 
+        
+                <h2>Medidas de precaución</h2>              
+               
+        <section class="seccion-tres">
+            <article class="fila1">
+                <img src="img/14-lavarse-manos.png" alt="">
+                <img src="img/16-tocar-nariz.png" alt="">
+                <img src="img/15-estornudar.png" alt="">
+                <img src="img/17-ventilar.png" alt="">
+            </article>
+
+            <article class="fila2">
+                <img src="img/18-limpiar-objetos.png" alt="">
+                <img src="img/20-reducir-contacto.png" alt="">
+                <img src="img/19-permanecer-domicilio.png" alt="">
+                <img src="img/21-no-compartir-mate.png" alt="">
+            </article>
+        </section>                   
+            
+                <h2>Hospital más cercano especializado en la enfermedad</h2>
+                                
+        <section class="seccion-cuatro">
+            <article class="info">
+                <h2 class="titulo">Hospital de Morón</h2>
+                    <br>
+                    <p>Tel.: 011 4133-4100</p><br>
+                    <p>Dirección: Dr. Rodolfo Monte 848</p><br>
+                    <p>Ciudad: Morón</p><br>
+                    <img src="img/hospital-moron.jpg" alt="Hospital de Morón" id="foto-hospital">
+            </article>
+            
+            <article class="mapita">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.832201735461!2d-58.61226638476886!3d-34.65894038044515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc772198ebd57%3A0xf684172956985f18!2sHospital%20de%20Mor%C3%B3n!5e0!3m2!1ses!2sar!4v1602570414020!5m2!1ses!2sar" width="600" height="300" frameborder="1" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+        </section>        
+    </main>
+
+    <script src="js/covid-19.js"></script>
+    <script src="js/menu.js"></script>
+    
+    <footer>
+        <div class="linea">
+            <p>Datos del Grupo:</p>
+
+            <ul>
+                <li>Ezequiel Damian Sanson - 41247699</li>
+                <li>Desarrollador Front End </li>
+                <li>Universidad de la Matanza</li>
+            </ul>
+        </div>
+
+        <div class="linea">
+            <p>Menu Inferior:</p>
+
+            <ul>
+                <li><a href="enfermedades.html">Enfermedades</a></li>
+                <li><a href="vacunacion.html">Vacunas</a></li>
+                <li><a href="hospitales.html">Hospitales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            </div>
+
+        <div class="linea">
+            <p>Redes Sociales:</p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
